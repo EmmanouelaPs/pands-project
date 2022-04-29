@@ -69,7 +69,15 @@ print(Versicolor)
 Virginica = Data_indexed.loc["virginica"] #filter for virginica specie
 print(Virginica)
 
-
 plt.hist(Setosa["sepal length (cm)"])
+fig, ax = plt.subplots( nrows=1, ncols=1 )  # create figure & 1 axis
+ax.plot([0,1,2], [10,20,3])
+plt.savefig('Setosa.png')
+plt.close(fig)    # close the figure window
+
+plt.hist(Versicolor["sepal length (cm)"])
+plt.show()
+
+plt.hist(Virginica["sepal length (cm)"])
 plt.show()
 
