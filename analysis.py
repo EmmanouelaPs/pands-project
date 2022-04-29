@@ -15,7 +15,7 @@ target = iris.target
 names = iris.target_names
 data = pd.DataFrame(X, columns=iris.feature_names)
 data['species'] = iris.target
-data['species'] = df['species'].replace(to_replace= [0, 1, 2], value = ['setosa', 'versicolor', 'virginica'])
+data['species'] = data['species'].replace(to_replace= [0, 1, 2], value = ['setosa', 'versicolor', 'virginica'])
 
 data.head()
 
@@ -72,3 +72,4 @@ print(Virginica)
 
 plt.hist(Setosa["sepal length (cm)"])
 plt.show()
+
