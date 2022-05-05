@@ -81,3 +81,11 @@ plt.show()
 plt.hist(Virginica["sepal length (cm)"])
 plt.show()
 
+#https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+#https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
+
+sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"sepal length (cm)").add_legend()
+sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"sepal width (cm)").add_legend()
+sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"petal length (cm)").add_legend()
+sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"petal width (cm)").add_legend()
+plt.show()
