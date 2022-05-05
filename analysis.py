@@ -89,3 +89,16 @@ sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"sepal width (cm)").ad
 sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"petal length (cm)").add_legend()
 sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"petal width (cm)").add_legend()
 plt.show()
+
+
+https://www.machinelearningplus.com/plots/python-scatter-plot/
+ 
+#create a scatter plot for a pair of variables using scatter on matploiut lib
+plt.scatter(x="sepal length (cm)",y="sepal width (cm)",data=data)
+plt.show()
+#specify only certain variables to include in the pairs plot
+sns.pairplot(data[['sepal length (cm)', 'sepal width (cm)']])
+
+
+#create a pairs plot that colors each point in each plot based on some categorical variable using the hue argument:
+sns.pairplot(data, hue='species')
