@@ -90,8 +90,7 @@ sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"petal length (cm)").a
 sns.FacetGrid(data,hue="species",size=5).map(sns.distplot,"petal width (cm)").add_legend()
 plt.show()
 
-
-https://www.machinelearningplus.com/plots/python-scatter-plot/
+#https://www.machinelearningplus.com/plots/python-scatter-plot/
  
 #create a scatter plot for a pair of variables using scatter on matploiut lib
 plt.scatter(x="sepal length (cm)",y="sepal width (cm)",data=data)
