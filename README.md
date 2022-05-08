@@ -50,9 +50,37 @@ I play with my data frame and I set index as species so it'll be easier for me t
 For each iris type I use the plt.hist function, set the parameters and create a histogram and save it in png file.
 However, while searching I came across the FacetGrid function which allows me to create a histogram for each of my variables (filtering by hue) which is very cleaned, organized and looks great!
 
-Our findings are in line with the bibliography and references.
+My findings are in line with the bibliography and references.
 
 References used:
 #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
 #https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
+
+#3.3 Outputs a scatter plot of each pair of variables. 
+
+I use the matplotlib function - plt.scatter to create scatter plot for my pair of variables. But also exploring the sns.pairplot(data, hue='species'), that create a pairs plot that colors each point in each plot based on some categorical variable using the hue argument.
+
+#https://www.machinelearningplus.com/plots/python-scatter-plot/
+
+#3.4 Performs any other analysis you think is appropriate
+
+I'm exploring the sns.boxplot function that shows what percentile ranges in what region.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
