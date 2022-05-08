@@ -12,7 +12,7 @@ Fisher wanted to distinguish the similar species from each other by developing a
 This probably is one of the most famous databases, used in data mining, classification and clustering analysis and to to test algorithms.
 
 Question 1:
-We start the code by importing pandas and numpy packages.
+I start writing my code by importing pandas and numpy packages.
 I searched online and found that I could import the the iris data set from sklearn.datasets. 
 I attribute the data in variable x as I will be later using the name data for the final dataframe.
 I save the following variables to clean my data:
@@ -41,7 +41,18 @@ References used:
 #https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
 https://stackabuse.com/writing-to-a-file-with-pythons-print-function/
 
-#3.2: Outputs a summary of each variable to a single text file
+#3.2: Saves a histogram of each variable to png files, and 
 
+I import matplotlib and seaborn packages as I will need them to create my histograms.
 
+I play with my data frame and I set index as species so it'll be easier for me to filter. I split my dataframe into 3 smaller ones - one for each iris type and I name the files as of the type name.
+
+For each iris type I use the plt.hist function, set the parameters and create a histogram and save it in png file.
+However, while searching I came across the FacetGrid function which allows me to create a histogram for each of my variables (filtering by hue) which is very cleaned, organized and looks great!
+
+Our findings are in line with the bibliography and references.
+
+References used:
+#https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+#https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
 
