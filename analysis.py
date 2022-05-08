@@ -101,3 +101,15 @@ sns.pairplot(data[['sepal length (cm)', 'sepal width (cm)']])
 
 #create a pairs plot that colors each point in each plot based on some categorical variable using the hue argument:
 sns.pairplot(data, hue='species')
+
+sns.boxplot(x="species",y="sepal length (cm)",data=data)
+plt.show()
+
+sns.boxplot(x="species",y="sepal width (cm)",data=data)
+plt.show()
+
+sns.boxplot(x="species",y="petal length (cm)",data=data)
+plt.show()
+
+sns.boxplot(x="species",y="petal width (cm)",data=data)
+plt.show()
